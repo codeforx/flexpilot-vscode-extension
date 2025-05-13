@@ -59,6 +59,7 @@ export class VariablesManager {
     ];
     logger.info("Registering chat variable resolvers");
 
+    /*
     // Register the chat variable resolvers
     for (const variable of chatVariables) {
       logger.debug(`Registering chat variable: ${variable.name}`);
@@ -70,7 +71,7 @@ export class VariablesManager {
           variable.description,
           variable.isSlow,
           {
-            resolve2: (_name, _context, stream) => {
+            resolve2: (_name: any, _context: any, stream: any) => {
               try {
                 logger.debug(`Resolving variable: ${variable.name}`);
                 const prompt = variable.prompt();
@@ -97,6 +98,7 @@ export class VariablesManager {
         ),
       );
     }
+   */
 
     // Register the terminal command execution event listener
     logger.debug("Registering terminal command execution event listener");

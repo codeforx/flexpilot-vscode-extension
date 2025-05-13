@@ -31,10 +31,12 @@ class PanelChatParticipant {
     );
 
     // Set up welcome message and sample questions providers
+    /*
     this.chatParticipant.welcomeMessageProvider = {
       provideWelcomeMessage: this.provideWelcomeMessage.bind(this),
       provideSampleQuestions: this.provideSampleQuestions.bind(this),
     };
+   */
 
     // Set up title provider
     this.chatParticipant.titleProvider = {
